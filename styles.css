@@ -1,22 +1,22 @@
 html {
-    margin: 0;
-    min-height: 100%;
-    width: 100%;
+    width: auto;
+    max-width: fit-content;
 }
 
 body {
     margin: 0;
 }
 
-.header {
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     width: 100%;
     top: 0%;
     padding: 24px;
-    background-color: #1f2937;
+    background-color: black;
     color: white;
 }
 
@@ -38,20 +38,75 @@ body {
     align-items: center;
     width: 30%;
     padding-right: 60px;
-    font-size: 24px;
+    font-size: 28px;
+    gap: 8px;
+    color: white;
 }
 
+.item {
+    color: white;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 24px solid white;
+    padding: 136px;
+    background-color: black;
+}
 
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    width: 30%;
+}
 
+.description {
+    font-size: 32px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    padding-top: 32px;
+}
 
+.blog {
+    padding-top: 64px;
+    margin: 0 auto;
+    width: 95%;
+    height: 750px;
+    border: 24px solid red;
+}
 
+.blog-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-size: 52px;
+    font-weight: bold;
+    color: black;
+}
 
-
-
-
-
-
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 0 auto;
+    font-size: 32px;
+    color: black;
+    list-style-type: none;
+    padding-top: 12px;
+}
 
 
 
