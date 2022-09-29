@@ -1,10 +1,7 @@
-html {
-    width: auto;
-    max-width: fit-content;
-}
-
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header-container {
@@ -15,7 +12,7 @@ body {
     height: 60px;
     width: 100%;
     top: 0%;
-    padding: 24px;
+    padding: 48px;
     background-color: black;
     color: white;
 }
@@ -26,7 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 16em;
-    padding-left: 8px;
+    padding-left: 16px;
     font-size: 48px;
 }
 
@@ -36,10 +33,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 30%;
-    padding-right: 60px;
+    width: 40%;
+    padding-right: 16px;
     font-size: 28px;
-    gap: 8px;
+    gap: 32px;
     color: white;
 }
 
@@ -47,13 +44,18 @@ body {
     color: white;
 }
 
+/* Society's Own */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 24px solid white;
-    padding: 136px;
+    border-bottom: 64px solid white;
+    border-top: 36px solid white;
+    border-left: 250px solid white;
+    border-right: 250px solid white;
+    padding-top: 136px;
+    padding-bottom: 136px;
     background-color: black;
 }
 
@@ -74,62 +76,75 @@ body {
     padding-top: 32px;
 }
 
-.blog {
-    padding-top: 64px;
-    margin: 0 auto;
-    width: 95%;
-    height: 750px;
-    border: 24px solid red;
-}
 
-.blog-head {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    font-size: 52px;
-    font-weight: bold;
-    color: black;
-}
-
-.blog-post {
+/* Blog Posts */
+#blog {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 400px;
+    margin: 50px auto;
+    border: 5px solid black;
+}
+
+.heading {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 0 auto;
-    font-size: 32px;
+    align-self: center;
+    width: 50%;
+    font-size: 64px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding-bottom: 8px;
+    border: 2px solid brown;
+}
+
+.blog-articles {
     color: black;
-    list-style-type: none;
-    padding-top: 12px;
+    font-size: 32px;
+    padding: 8px;
+    border: 8px solid blueviolet;
+}
+
+#post-1 {
+    border-bottom: 8px;
 }
 
 
+ul.blog-articles:not(:last-child) {
+    margin-bottom: 3px;
+}
 
 
+/* Recommended Reads */
+.rr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3000px;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    padding: 16px;
+}
+
+li  {
+    display: block;
+    font-size: 32px;
+    color: white;
+    padding: 16px;
+}
+
+img {
+    display: flex;
+    align-self: center;
+    max-width: fit-content;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER */
 
 
